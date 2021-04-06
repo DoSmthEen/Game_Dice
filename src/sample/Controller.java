@@ -31,7 +31,7 @@ public class Controller{
     Random random = new Random();
     Desktop desktop = Desktop.getDesktop();
 
-    Date date = new Date();
+    Date date;
 
     @FXML
     private ResourceBundle resources;
@@ -86,7 +86,7 @@ public class Controller{
 
         Button_NewGame_ResetPoints.setOnAction(event -> {
             Current_Points_Num_Text.setText("100");
-
+            Game_Results.setText("");
         });
 
         Button_Play.setOnAction(event ->{
