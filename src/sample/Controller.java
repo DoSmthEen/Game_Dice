@@ -86,7 +86,10 @@ public class Controller{
 
         Button_NewGame_ResetPoints.setOnAction(event -> {
             Current_Points_Num_Text.setText("100");
+            Button_Save_In_File.setDisable(true);
+            Button_Save_In_File.setVisible(false);
             Game_Results.setText("");
+            Errors.setText("");
         });
 
         Button_Play.setOnAction(event ->{
