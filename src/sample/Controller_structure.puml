@@ -90,15 +90,15 @@ subgraph cluster_909675094 {
 	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
 <TR><TD ALIGN="LEFT" >(C)Controller</TD></TR>
 <HR/>
-<TR><TD ALIGN="LEFT" >-   Button_NewGame_ResetPoints: Button [0..1]</TD></TR>
-<TR><TD ALIGN="LEFT" >-   Button_Play: Button [0..1]</TD></TR>
-<TR><TD ALIGN="LEFT" >-   Button_Save_In_File: Button [0..1]</TD></TR>
-<TR><TD ALIGN="LEFT" >-   Button_ShowGameLog: Button [0..1]</TD></TR>
-<TR><TD ALIGN="LEFT" >-   Current_Points_Num_Text: Label [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   CurrentPointsNum: Label [0..1]</TD></TR>
 <TR><TD ALIGN="LEFT" >-   Errors: Label [0..1]</TD></TR>
-<TR><TD ALIGN="LEFT" >-   Field_Input_Bet: TextField [0..1]</TD></TR>
-<TR><TD ALIGN="LEFT" >-   Field_Input_Prediction: TextField [0..1]</TD></TR>
-<TR><TD ALIGN="LEFT" >-   Game_Results: Label [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   GameResults: Label [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   InputBet: TextField [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   InputPrediction: TextField [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   NewGame_ResetPoints: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   Play: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   SaveInFile: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   ShowGameLog: Button [0..1]</TD></TR>
 <TR><TD ALIGN="LEFT" >#   bet: int [1]</TD></TR>
 <TR><TD ALIGN="LEFT" >#   current_points_num: int [1]</TD></TR>
 <TR><TD ALIGN="LEFT" >#   date: Date [0..1]</TD></TR>
