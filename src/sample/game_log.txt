@@ -1,10 +1,10 @@
--Thu Apr 08 13:41:11 EEST 2021-
+-Sat May 01 18:03:15 EEST 2021-
 YOU WIN!
 Points won: 12
 
 First dice: 6
-Second dice: 2
-Sum of points on dices: 8
+Second dice: 5
+Sum of points on dices: 11
 Your bet: 12
 Your prediction: 12
 ********************

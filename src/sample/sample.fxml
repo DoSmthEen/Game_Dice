@@ -13,165 +13,144 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
-            prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <ImageView fitHeight="500.0" fitWidth="700.0" opacity="0.31">
-      <Image url="@assets/Game_Dice.jpg"/>
+      <Image url="@assets/Game_Dice.jpg" />
    </ImageView>
    <AnchorPane layoutY="-1.0" prefHeight="69.0" prefWidth="700.0" style="-fx-background-color: #008B8B;">
-      <Label graphicTextGap="0.0" layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="146.0"
-             text="\$Your points$:" textFill="#b9fab3">
+      <Label graphicTextGap="0.0" layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="146.0" text="\$Your points$:" textFill="#b9fab3">
          <font>
-            <Font name="Arial Rounded MT Bold" size="20.0"/>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
          </font>
          <cursor>
-            <Cursor fx:constant="TEXT"/>
+            <Cursor fx:constant="TEXT" />
          </cursor>
       </Label>
-      <Label layoutX="444.0" layoutY="-1.0" prefHeight="70.0" prefWidth="256.0"
-             style="-fx-background-color: #2F4F4F;" text="        Results" textAlignment="CENTER">
+      <Label layoutX="444.0" layoutY="-1.0" prefHeight="70.0" prefWidth="256.0" style="-fx-background-color: #2F4F4F;" text="        Results" textAlignment="CENTER">
          <font>
-            <Font size="35.0"/>
+            <Font size="35.0" />
          </font>
          <cursor>
-            <Cursor fx:constant="TEXT"/>
+            <Cursor fx:constant="TEXT" />
          </cursor>
          <textFill>
             <LinearGradient>
                <stops>
                   <Stop>
                      <color>
-                        <Color red="0.699999988079071" green="0.6003005504608154" blue="0.30799999833106995"/>
+                        <Color red="0.699999988079071" green="0.6003005504608154" blue="0.30799999833106995" />
                      </color>
                   </Stop>
                   <Stop offset="1.0">
                      <color>
-                        <Color red="1.0" green="1.0" blue="1.0"/>
+                        <Color red="1.0" green="1.0" blue="1.0" />
                      </color>
                   </Stop>
                </stops>
             </LinearGradient>
          </textFill>
       </Label>
-      <Button fx:id="NewGame_ResetPoints" alignment="TOP_CENTER" layoutX="293.0" layoutY="5.0"
-              mnemonicParsing="false" prefHeight="60.0" prefWidth="114.0" text="New Game&#10;(reset points)"
-              textAlignment="CENTER">
+      <Button fx:id="NewGame_ResetPoints" alignment="TOP_CENTER" layoutX="293.0" layoutY="5.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="114.0" text="New Game&#10;(reset points)" textAlignment="CENTER">
          <cursor>
-            <Cursor fx:constant="HAND"/>
+            <Cursor fx:constant="HAND" />
          </cursor>
          <font>
-            <Font name="Agency FB" size="20.0"/>
+            <Font name="Agency FB" size="20.0" />
          </font>
       </Button>
-      <Label fx:id="CurrentPointsNum" layoutX="160.0" layoutY="14.0" prefHeight="18.0" prefWidth="114.0" text="100"
-             textFill="WHITE">
+      <Label fx:id="CurrentPointsNum" layoutX="160.0" layoutY="14.0" prefHeight="18.0" prefWidth="114.0" text="100" textFill="WHITE">
          <font>
-            <Font size="20.0"/>
+            <Font size="20.0" />
          </font>
       </Label>
    </AnchorPane>
    <Label layoutX="14.0" layoutY="108.0" prefHeight="30.0" prefWidth="81.0" text="Bet size:" textAlignment="CENTER">
       <font>
-         <Font name="System Bold" size="20.0"/>
+         <Font name="System Bold" size="20.0" />
       </font>
       <opaqueInsets>
-         <Insets/>
+         <Insets />
       </opaqueInsets>
       <cursor>
-         <Cursor fx:constant="TEXT"/>
+         <Cursor fx:constant="TEXT" />
       </cursor>
    </Label>
    <Label layoutX="14.0" layoutY="150.0" prefHeight="30.0" prefWidth="103.0" text="Prediction:" textAlignment="CENTER">
       <font>
-         <Font name="System Bold" size="20.0"/>
+         <Font name="System Bold" size="20.0" />
       </font>
       <cursor>
-         <Cursor fx:constant="TEXT"/>
+         <Cursor fx:constant="TEXT" />
       </cursor>
    </Label>
-   <AnchorPane focusTraversable="true" layoutX="445.0" layoutY="69.0" opacity="0.7" prefHeight="431.0" prefWidth="256.0"
-               style="-fx-background-color: #A9A9A9;">
+   <AnchorPane focusTraversable="true" layoutX="445.0" layoutY="69.0" opacity="0.7" prefHeight="431.0" prefWidth="256.0" style="-fx-background-color: #A9A9A9;">
       <opaqueInsets>
-         <Insets/>
+         <Insets />
       </opaqueInsets>
       <Label fx:id="GameResults" alignment="BASELINE_CENTER" layoutX="-3.0" prefHeight="361.0" prefWidth="256.0">
          <font>
-            <Font name="System Bold" size="16.0"/>
+            <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <Button fx:id="SaveInFile" alignment="BOTTOM_CENTER" layoutX="3.0" layoutY="365.0" mnemonicParsing="false"
-              prefHeight="60.0" prefWidth="249.0" text="Save result&#10;in game log" textAlignment="CENTER">
+      <Button fx:id="SaveInFile" alignment="BOTTOM_CENTER" layoutX="3.0" layoutY="365.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="249.0" text="Save result&#10;in game log" textAlignment="CENTER">
          <font>
-            <Font name="System Bold" size="17.0"/>
+            <Font name="System Bold" size="17.0" />
          </font>
          <cursor>
-            <Cursor fx:constant="HAND"/>
+            <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
    </AnchorPane>
-   <TextField fx:id="InputBet" layoutX="117.0" layoutY="110.0" promptText="enter your bet"
-              style="-fx-background-color: white;"/>
-   <TextField fx:id="InputPrediction" layoutX="117.0" layoutY="153.0" promptText="enter your prediction"
-              style="-fx-background-color: white;"/>
-   <AnchorPane layoutY="249.0" opacity="0.79" prefHeight="250.0" prefWidth="290.0"
-               style="-fx-background-color: GhostWhite;">
-      <Label alignment="BASELINE_CENTER" prefHeight="250.0" prefWidth="291.0"
-             text="Prediction of the sum of points of 2 dices:&#10;&#10;   1.If BOTH the sum of points and your bet &#10;      are in range of 1 to 7(inclusively) or  &#10;      8 to 12(inclusively) - you win your bet.&#10;   &#10;   2.If the sum of points and your bet are &#10;      equal - you win your bet multiplied by 4.&#10;&#10;   3.Any other result - you lose."
-             textFill="#864141">
+   <TextField fx:id="InputBet" layoutX="117.0" layoutY="110.0" promptText="enter your bet" style="-fx-background-color: white;" />
+   <TextField fx:id="InputPrediction" layoutX="117.0" layoutY="153.0" promptText="enter your prediction" style="-fx-background-color: white;" />
+   <AnchorPane layoutY="249.0" opacity="0.79" prefHeight="250.0" prefWidth="290.0" style="-fx-background-color: GhostWhite;">
+      <Label alignment="BASELINE_CENTER" prefHeight="250.0" prefWidth="291.0" text="Prediction of the sum of points of 2 dices:&#10;&#10;1.If BOTH the sum of points and your &#10;   prediction are in range of 1 to 7(inclusively)&#10;   or 8 to 12(inclusively) - you win your bet.&#10;   &#10;2.If the sum of points and your bet are &#10;   equal - you win your bet multiplied by 4.&#10;&#10;3.Any other result - you lose." textFill="#864141">
          <font>
-            <Font size="14.0"/>
+            <Font size="14.0" />
          </font>
          <cursor>
-            <Cursor fx:constant="TEXT"/>
+            <Cursor fx:constant="TEXT" />
          </cursor>
       </Label>
       <Button fx:id="ShowGameLog" layoutY="224.0" mnemonicParsing="false" text="Game log">
          <font>
-            <Font name="Arial Rounded MT Bold" size="14.0"/>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
          </font>
          <cursor>
-            <Cursor fx:constant="HAND"/>
+            <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
    </AnchorPane>
-   <Button fx:id="Play" layoutX="6.0" layoutY="196.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="277.0"
-           text="Play">
+   <Button fx:id="Play" layoutX="6.0" layoutY="196.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="277.0" text="Play">
       <cursor>
-         <Cursor fx:constant="HAND"/>
+         <Cursor fx:constant="HAND" />
       </cursor>
       <font>
-         <Font name="Cooper Black" size="19.0"/>
+         <Font name="Cooper Black" size="19.0" />
       </font>
    </Button>
-   <AnchorPane layoutX="289.0" layoutY="250.0" opacity="0.84" prefHeight="250.0" prefWidth="156.0"
-               style="-fx-background-color: #1E90FF;">
-      <Label alignment="BASELINE_CENTER" layoutY="61.0" prefHeight="127.0" prefWidth="156.0"
-             text="! ATTENTION !&#10;Your bet cannot be more &#10;than current amount &#10;of your points and&#10;less than zero&#10;&#10;Your prediction must be in &#10;range of 2 to 12(inclusively)"
-             textAlignment="CENTER" textFill="#ff2b00">
+   <AnchorPane layoutX="289.0" layoutY="250.0" opacity="0.84" prefHeight="250.0" prefWidth="156.0" style="-fx-background-color: #1E90FF;">
+      <Label alignment="BASELINE_CENTER" layoutY="61.0" prefHeight="127.0" prefWidth="156.0" text="! ATTENTION !&#10;Your bet cannot be more &#10;than current amount &#10;of your points and&#10;less than zero&#10;&#10;Your prediction must be in &#10;range of 2 to 12(inclusively)" textAlignment="CENTER" textFill="#ff2b00">
          <font>
-            <Font name="System Bold" size="11.0"/>
+            <Font name="System Bold" size="11.0" />
          </font>
          <cursor>
-            <Cursor fx:constant="TEXT"/>
+            <Cursor fx:constant="TEXT" />
          </cursor>
       </Label>
    </AnchorPane>
-   <AnchorPane layoutX="289.0" layoutY="68.0" opacity="0.84" prefHeight="181.0" prefWidth="156.0"
-               style="-fx-background-color: #F5A391;">
-      <Label alignment="BASELINE_CENTER" layoutX="49.0" layoutY="4.0" prefHeight="20.0" prefWidth="58.0"
-             text="ERRORS" textAlignment="CENTER">
+   <AnchorPane layoutX="289.0" layoutY="68.0" opacity="0.84" prefHeight="181.0" prefWidth="156.0" style="-fx-background-color: #F5A391;">
+      <Label alignment="BASELINE_CENTER" layoutX="49.0" layoutY="4.0" prefHeight="20.0" prefWidth="58.0" text="ERRORS" textAlignment="CENTER">
          <font>
-            <Font name="System Bold" size="14.0"/>
+            <Font name="System Bold" size="14.0" />
          </font>
          <cursor>
-            <Cursor fx:constant="TEXT"/>
+            <Cursor fx:constant="TEXT" />
          </cursor>
       </Label>
-      <Label fx:id="Errors" alignment="TOP_LEFT" layoutY="24.0" prefHeight="154.0" prefWidth="156.0"
-             underline="true">
+      <Label fx:id="Errors" alignment="TOP_LEFT" layoutY="24.0" prefHeight="154.0" prefWidth="156.0" underline="true">
          <font>
-            <Font size="11.0"/>
+            <Font size="11.0" />
          </font>
       </Label>
    </AnchorPane>
