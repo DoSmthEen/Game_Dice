@@ -104,7 +104,7 @@
    <TextField fx:id="InputBet" layoutX="117.0" layoutY="110.0" promptText="enter your bet" style="-fx-background-color: white;" />
    <TextField fx:id="InputPrediction" layoutX="117.0" layoutY="153.0" promptText="enter your prediction" style="-fx-background-color: white;" />
    <AnchorPane layoutY="249.0" opacity="0.79" prefHeight="250.0" prefWidth="290.0" style="-fx-background-color: GhostWhite;">
-      <Label alignment="BASELINE_CENTER" prefHeight="250.0" prefWidth="291.0" text="Prediction of the sum of points of 2 dices:&#10;&#10;1.If BOTH the sum of points and your &#10;   prediction are in range of 1 to 7(inclusively)&#10;   or 8 to 12(inclusively) - you win your bet.&#10;   &#10;2.If the sum of points and your bet are &#10;   equal - you win your bet multiplied by 4.&#10;&#10;3.Any other result - you lose." textFill="#864141">
+      <Label alignment="BASELINE_CENTER" prefHeight="250.0" prefWidth="291.0" text="Prediction of the sum of points of 2 dices:&#10;&#10;1.If BOTH the sum of points and your &#10;   prediction are in range of 2 to 7(inclusively)&#10;   or 8 to 12(inclusively) - you win your bet.&#10;   &#10;2.If the sum of points and your bet are &#10;   equal - you win your bet multiplied by 4.&#10;&#10;3.Any other result - you lose." textFill="#864141">
          <font>
             <Font size="14.0" />
          </font>
