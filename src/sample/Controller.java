@@ -14,22 +14,22 @@ import javafx.scene.control.TextField;
 public class Controller{
     File file = new File("src/sample/game_log.txt");
 
-    int bet;
-    int prediction;
+    private int bet;
+    private int prediction;
 
-    int first_dice;
-    int second_dice;
-    int dices_sum;
+    private int first_dice;
+    private int second_dice;
+    private int dices_sum;
 
-    int current_points_num;
+    private int current_points_num;
 
-    String errors_list = "";
-    String results = "";
+    private String errors_list = "";
+    private String results = "";
 
-    Random random = new Random();
-    Desktop desktop = Desktop.getDesktop();
+    private Random random = new Random();
+    private Desktop desktop = Desktop.getDesktop();
 
-    Date date;
+    private Date date;
 
     @FXML
     private Button NewGame_ResetPoints;
@@ -103,20 +103,20 @@ public class Controller{
                     dices_sum = first_dice + second_dice;
 
                     if(prediction == dices_sum){
-                        results = results + "YOU WIN!" + "\nPoints won: " + String.valueOf(4 * bet) + "\n\n";
+                        results = results + "YOU WIN!" + "\nPoints won: " + 4 * bet + "\n\n";
                         CurrentPointsNum.setText(String.valueOf(current_points_num + 4 * bet));
                     }
                     else if((prediction <= 7 && dices_sum <= 7) || (prediction > 7 && dices_sum > 7)){
-                        results = results + "YOU WIN!" + "\nPoints won: " + String.valueOf(bet) + "\n\n";
+                        results = results + "YOU WIN!" + "\nPoints won: " + bet + "\n\n";
                         CurrentPointsNum.setText(String.valueOf(current_points_num + bet));
                     }
                     else {
-                        results = results + "YOU LOSE!" + "\nPoints lost: " + String.valueOf(bet) + "\n\n";
+                        results = results + "YOU LOSE!" + "\nPoints lost: " + bet + "\n\n";
                         CurrentPointsNum.setText(String.valueOf(current_points_num - bet));
                     }
-                    results = results + "First dice: " + String.valueOf(first_dice) + "\nSecond dice: "
-                    + String.valueOf(second_dice) + "\nSum of points on dices: " + String.valueOf(dices_sum)
-                            + "\nYour bet: " + String.valueOf(bet) + "\nYour prediction: " + String.valueOf(prediction);
+                    results = results + "First dice: " + first_dice + "\nSecond dice: "
+                    + second_dice + "\nSum of points on dices: " + dices_sum
+                            + "\nYour bet: " + bet + "\nYour prediction: " + prediction;
                     GameResults.setText(results);
                     results = "";
 
