@@ -1,10 +1,10 @@
--Sat May 01 18:03:15 EEST 2021-
-YOU WIN!
-Points won: 12
+-Mon May 17 11:43:46 EEST 2021-
+YOU LOSE!
+Points lost: 50
 
-First dice: 6
-Second dice: 5
-Sum of points on dices: 11
-Your bet: 12
-Your prediction: 12
+First dice: 5
+Second dice: 4
+Sum of points on dices: 9
+Your bet: 50
+Your prediction: 7
 ********************
